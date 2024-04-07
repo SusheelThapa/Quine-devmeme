@@ -32,9 +32,9 @@ const Features = () => {
   return (
     <div
       id="features"
-      className="pt-28 flex flex-col justify-center items-center gap-10 bg-stone-900"
+      className="pt-28 pb-16 flex flex-col justify-center items-center gap-10 bg-stone-900"
     >
-      <div className="text-6xl text-white">
+      <div className="text-6xl text-white font-bold">
         <span>Features</span>
       </div>
       <div className="w-3/5 text-center text-lg text-gray-300">

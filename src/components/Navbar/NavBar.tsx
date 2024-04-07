@@ -15,7 +15,7 @@ const NavBar = () => {
             className="w-10 rounded-full"
           /> */}
           <div className="text-3xl font-extrabold ">
-            <span className="text-[#ffea9d]">dev</span>
+            <span className="text-[#f9e59c]">dev</span>
             <span className="text-orange-600">meme</span>
           </div>
         </div>
@@ -24,13 +24,13 @@ const NavBar = () => {
       {/* navigation menu */}
       <div className="space-x-4">
         <ul className="flex gap-10  justify-start items-center font-medium">
-          <li className="hover:text-gray-200 cursor-pointer">
+          <li className="hover:text-teal-400 cursor-pointer">
             <Link to="/">Home</Link>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer">
+          <li className="hover:text-teal-400 cursor-pointer">
             <Link to="/#products">Features</Link>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer">
+          <li className="hover:text-teal-400 cursor-pointer">
             <Link to="/#about-us">About Us</Link>
           </li>
         </ul>
@@ -38,9 +38,9 @@ const NavBar = () => {
 
       {/* Github button */}
       <Link to={"https://github.com/SusheelThapa"}>
-        <Button className="text-xl bg-white text-black p-4 py-6 font-medium  hover:bg-black hover:text-white hover:shadow-md hover:shadow-gray-500 flex justify-center align-center gap-4 rounded-xl">
+        <Button className="text-xl bg-white text-black p-4 py-6 font-medium  hover:bg-teal-800 hover:text-white  flex justify-center align-center gap-4 rounded-xl">
           <FaGithub className="text-2xl" />
-          <span className="font-extrabold">Github</span>
+          <span className="font-extrabold tracking-wider">Github</span>
         </Button>
       </Link>
     </div>
