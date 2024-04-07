@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className=" py-8 px-64 flex justify-between items-center h-20 text-xl text-white bg-gray-800">
+    <div className=" py-8 px-64 flex justify-between items-center h-20 text-xl text-white bg-gray-900">
       {/* Logo section */}
       <Link to="/">
         <div className="flex gap-2 items-end justify-end">
@@ -15,7 +15,7 @@ const NavBar = () => {
             className="w-10 rounded-full"
           /> */}
           <div className="text-3xl font-extrabold ">
-            <span className="text-white">dev</span>
+            <span className="text-[#ffea9d]">dev</span>
             <span className="text-orange-600">meme</span>
           </div>
         </div>

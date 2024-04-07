@@ -1,11 +1,11 @@
 import NavBar from "@/components/Navbar";
-import Layout from "@/layout/Layout";
+import Hero from "@/components/Hero";
 
 const LandingPage = () => {
   return (
     <>
       <NavBar />
-      <Layout></Layout>
+      <Hero />
     </>
   );
 };
