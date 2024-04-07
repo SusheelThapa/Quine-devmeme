@@ -2,7 +2,7 @@ import HeroImage from "@/assets/img/hero.png";
 
 const Hero = () => {
   return (
-    <div className="mx-auto px-32 m-10 mt-0 flex  justify-around  items-center h-[80vh] bg-stone-800 ">
+    <div className="mx-auto px-32  flex  justify-around  items-center h-[80vh] bg-gray-800 ">
       <div className="p-4 flex flex-col gap-1 justify-center w-1/2 ">
         <div className="text-7xl font-medium  mt-5 text-white">
           Reflecting
