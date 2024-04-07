@@ -1,5 +1,7 @@
+import AppRoutes from "./routes/AppRoutes";
+
 const App = () => {
-  return <div className="text-3xl font-bold underline">devmeme</div>;
+  return <AppRoutes />;
 };
 
 export default App;
