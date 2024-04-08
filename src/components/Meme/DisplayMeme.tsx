@@ -6,6 +6,7 @@ interface Props {
   imageUrls: string[];
 }
 const DisplayMeme = ({ imageUrls }: Props) => {
+  
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
@@ -24,6 +25,7 @@ const DisplayMeme = ({ imageUrls }: Props) => {
   const gotoNext = () =>
     lightboxIndex + 1 < imageUrls.length && setLightboxIndex(lightboxIndex + 1);
 
+  console.log(imageUrls)
   return (
     <div>
       <div
@@ -32,7 +34,7 @@ const DisplayMeme = ({ imageUrls }: Props) => {
         <h1 className="text-teal-500 mb-20 text-6xl font-semibold underline text-center my-10">
           Meme Gallery
         </h1>
-        <div className="grid grid-cols-4  gap-16">
+        <div className="grid grid-cols-4 gap-16">
           {imageUrls.map((imageUrl, index) => (
             <div
               key={index}
@@ -45,7 +47,7 @@ const DisplayMeme = ({ imageUrls }: Props) => {
                 className="result-image max-w-full"
                 width={300}
                 height={300}
-              />
+              />x
               <div className="mt-2 text-white">
                 <FaExpand className="text-xl inline-block mr-2" />
                 <span className="text-gray-300">Click to enlarge</span>
