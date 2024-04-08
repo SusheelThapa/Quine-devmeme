@@ -10,7 +10,7 @@ const features = [
     icon: <AiOutlinePicture className="text-red-500" size={65} />,
     description:
       "Generate hilarious memes using our vast collection of developer-themed images sourced from our database. Express your coding experiences through witty captions and share them with the developer community.",
-    link: "/image-meme",
+    link: "/programming-meme",
   },
   {
     title: "AI Joke Generator",
