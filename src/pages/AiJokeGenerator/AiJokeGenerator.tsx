@@ -6,15 +6,32 @@ import axios from "axios";
 import { useToast } from "@/components/ui/use-toast";
 import CircularLoader from "@/components/CircularLoader/CircularLoader";
 
-interface JokeResponse {
-  joke: string;
-}
-
 const AiJokeGenerator = () => {
   const { toast } = useToast();
   const [generatedJoke, setGeneratedJoke] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+  const generateJoke = async (params: string) => {
+    const response = await axios({
+      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
+      method: "post",
+      data: {
+        contents: [
+          {
+            parts: [
+              {
+                text: `Generate a programming joke on ${params} programming language.`,
+              },
+            ],
+          },
+        ],
+      },
+    });
+    console.log(
+      response["data"]["candidates"][0]["content"]["parts"][0]["text"]
+    );
+    return response["data"]["candidates"][0]["content"]["parts"][0]["text"];
+  };
   const handleSubmit = async (jokeSetup: string) => {
     toast({
       variant: "joke-generator",
@@ -22,15 +39,11 @@ const AiJokeGenerator = () => {
     });
     try {
       setLoading(true);
-
+      console.log();
       // Simulating an API call delay (replace this with your actual API call logic)
-      const response = await axios.post(
-        "http://localhost:8000/api/generate_joke/",
-        { jokeSetup }
-      );
-      const jokeData: JokeResponse = response.data;
-
-      setGeneratedJoke(jokeData.joke);
+      const response = await generateJoke(jokeSetup);
+      console.log(response);
+      setGeneratedJoke(response);
     } catch (error) {
       console.error("Error making API call:", error);
     } finally {
@@ -47,8 +60,8 @@ const AiJokeGenerator = () => {
           <CircularLoader />
         ) : generatedJoke ? (
           <div className="text-center mt-8 bg-gray-800">
-            <p className="text-gray-600">Here's your joke:</p>
-            <p className="text-lg font-bold">{generatedJoke}</p>
+            <p className="text-5xl underline text-teal-500">Joke</p>
+            <p className="text-xl text-gray-200 font-bold">{generatedJoke}</p>
           </div>
         ) : null}
       </div>
