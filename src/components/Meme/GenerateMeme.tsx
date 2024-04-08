@@ -4,7 +4,7 @@ interface Props {
 
 const GenerateMeme = ({ onSubmit }: Props) => {
   return (
-    <div className="text-center">
+    <div className="text-center h-[65vh] flex justify-center items-center flex-col">
       <div className="py-10   text-white text-center flex justify-between items-center">
         <div>
           <div className="text-7xl ">
