@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { AiOutlinePicture, AiOutlineFileText } from "react-icons/ai";
 import { FaCode } from "react-icons/fa";
+import { useFlags } from "flagsmith/react";
 
 const features = [
   {
@@ -29,6 +30,7 @@ const features = [
 ];
 
 const Features = () => {
+  const { programming_reel } = useFlags(["programming_reel"]);
   return (
     <div
       id="features"
@@ -45,6 +47,8 @@ const Features = () => {
       </div>
       <div className="my-10 flex gap-20 justify-center items-center">
         {features.map((product, index) => {
+          if (!programming_reel.enabled && product.title == "Programming Reel")
+            return null;
           return (
             <Link to={product.link ? product.link : "#"}>
               <Card
