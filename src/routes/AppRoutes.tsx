@@ -21,7 +21,7 @@ const AppRoutes = () => {
             maintainance_break.enabled ? (
               <MaintainencePage />
             ) : coming_soon.enabled ? (
-              <ComingSoon />
+              <ComingSoon days={30} />
             ) : (
               <LandingPage />
             )
