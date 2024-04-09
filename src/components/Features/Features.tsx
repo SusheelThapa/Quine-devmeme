@@ -25,7 +25,7 @@ const features = [
     icon: <FaCode className="text-blue-600" size={65} />,
     description:
       "Dive into our curated collection of programming reels, showcasing the most entertaining and insightful videos from the coding world. Stay inspired and informed while enjoying captivating content.",
-    link: "#",
+    link: "/programming-reels",
   },
 ];
 

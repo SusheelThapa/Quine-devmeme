@@ -6,12 +6,16 @@ import ProgrammingMeme from "@/pages/ProgrammingMeme";
 import { useFlags } from "flagsmith/react";
 import MaintainencePage from "@/pages/MaintainencePage";
 import ComingSoon from "@/pages/ComingSoon";
+import ProgrammingReels from "@/pages/ProgrammingReels";
 
 const AppRoutes = () => {
-  const { maintainance_break, coming_soon } = useFlags([
+  const { maintainance_break, coming_soon, programming_reel } = useFlags([
     "maintainance_break",
     "coming_soon",
+    "programming_reel",
   ]);
+
+  console.log(programming_reel.enabled);
   return (
     <Router>
       <Routes>
@@ -29,6 +33,9 @@ const AppRoutes = () => {
         />
         <Route path="/ai-text-joke" element={<AiJokeGenerator />} />
         <Route path="/programming-meme" element={<ProgrammingMeme />} />
+        {programming_reel.enabled && (
+          <Route path="/programming-reels" element={<ProgrammingReels />} />
+        )}
       </Routes>{" "}
     </Router>
   );
