@@ -28,16 +28,44 @@
 </p>
 
 <p align="center">
-   Reflecting Nerds and Greeks <br/>
+   Reflecting the Nerds and Greeks <br/>
    Coding meets Humour 😄 <br>
    Laugh, share, and enjoy the lighter side of coding with fellow developers. 😂👩‍💻🤖
 </p>
 
+## Description
+
+**DevMeme** is a platform designed to alleviate the stress and boredom often experienced by developers during long coding sessions. It offers a collection of entertaining features tailored to the coding community, including an Image Meme Generator, Text-Based Joke Generator, and Programming Reels.
+
+## Problem
+
+Developers often encounter the following challenges during coding sessions:
+
+- **Frustration Over Bugs**: Debugging code can be time-consuming and frustrating, leading to decreased motivation and productivity.
+- **Mind Boredom of Hours of Coding**: Spending long hours writing code can result in mental fatigue and boredom, affecting creativity and problem-solving abilities.
+
+DevMeme aims to address these challenges by providing a platform for developers to take a break, unwind, and find inspiration through humor and entertainment.
+
+## How It Solves
+
+### Frustration Over Bugs:
+
+- DevMeme provides a distraction in the form of hilarious memes and jokes, offering developers a much-needed break from the frustration of debugging. By injecting humor into their day, DevMeme helps developers maintain a positive outlook and stay motivated to tackle challenging problems.
+
+### Mind Boredom of Hours of Coding:
+
+- DevMeme's diverse range of entertaining content, including memes, jokes, and programming reels, prevents developers from succumbing to the monotony of long coding sessions. By providing a source of amusement and inspiration, DevMeme keeps developers engaged and energized, enhancing their overall coding experience.
+
 ## Table of Contents
 
+- [Description](#description)
+- [Problem](#problem)
+- [How It Solves](#how-it-solves)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
 - [Dependencies](#dependencies)
 - [Acknowledgement](#acknowledgement)
 - [Contributing](#contributing)
@@ -67,7 +95,7 @@
 
 - Programming Reels
 
-  Sometimes, its worth to watch programming reels.
+  Sometimes, it's worth watching programming reels.
   <details>
     <summary> Sample UI of Programming Reels</summary>
     <img src="https://github.com/SusheelThapa/Quine-devmeme/assets/83917129/cfded23b-b2a1-40bd-ae18-04a07a76f684" width=750/>
@@ -81,7 +109,7 @@ https://github.com/SusheelThapa/from_taipy_census/assets/83917129/b44bf863-a691-
 
 ### Prerequisites
 
-Before running, `Quine-devmeme`, you will need an **Gemini API** key. You can obtain an API key by registering on the Google Gemini platform.
+Before running `Quine-devmeme`, you will need a **Gemini API** key. You can obtain an API key by registering on the Google Gemini platform.
 
 ### Setup
 
@@ -116,17 +144,26 @@ Before running, `Quine-devmeme`, you will need an **Gemini API** key. You can ob
 
 ## Dependencies
 
-- Vite
-- React
-- React Router
-- React Icons
-- shadcn/ui
-- Tailwind CSS
-- Flagsmith
+- [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): `^1.0.2`
+- [@radix-ui/react-toast](https://www.npmjs.com/package/@radix-ui/react-toast): `^1.1.5`
+- [axios](https://www.npmjs.com/package/axios): `^0.23.0`
+- [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): `^0.7.0`
+- [clsx](https://www.npmjs.com/package/clsx): `^1.1.1`
+- [dotenv](https://www.npmjs.com/package/dotenv): `^10.0.0`
+- [flagsmith](https://www.npmjs.com/package/flagsmith): `^5.0.0`
+- [lucide-react](https://www.npmjs.com/package/lucide-react): `^0.2.8`
+- [react](https://www.npmjs.com/package/react): `^18.0.0`
+- [react-dom](https://www.npmjs.com/package/react-dom): `^18.0.0`
+- [react-icons](https://www.npmjs.com/package/react-icons): `^4.3.1`
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): `^6.2.1`
+- [react-spring-lightbox](https://www.npmjs.com/package/react-spring-lightbox): `^1.9.0`
+- [styled-components](https://www.npmjs.com/package/styled-components): `^5.3.3`
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): `^1.0.4`
 
 ## Acknowledgement
 
-- [Programming Meme](https://github.com/deep5050/programming-memes)
+DevMeme utilizes the repository [Programming Meme](https://github.com/deep5050/programming-memes)
+to source a collection of memes for the **Programming Meme** feature.
 
 ## Contributing
 
