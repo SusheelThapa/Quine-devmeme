@@ -1,9 +1,13 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const ReelCarousel = ({ reelLinks }) => {
+interface Props {
+  reelLinks: string[];
+}
+
+const ReelCarousel = ({ reelLinks }: Props) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const handlePlay = () => {
     if (videoRef.current) videoRef.current.play();
