@@ -65,19 +65,25 @@
     <img src="https://github.com/SusheelThapa/Quine-devmeme/assets/83917129/950e448c-afe0-4969-8f1c-b2a9eff47991" width=750/>
   </details>
 
+- Programming Reels
+
+  Sometimes, its worth to watch programming reels.
+  <details>
+    <summary> Sample UI of Programming Reels</summary>
+    <img src="https://github.com/SusheelThapa/Quine-devmeme/assets/83917129/cfded23b-b2a1-40bd-ae18-04a07a76f684" width=750/>
+  </details>
+
 ## Demo
 
-Coming Soon...
+https://github.com/SusheelThapa/from_taipy_census/assets/83917129/b44bf863-a691-45e7-8ea7-3ad962b13395
 
 ## Installation
 
 ### Prerequisites
 
-Before running, Quine-devmeme, you will need an Gemini API key. You can obtain an API key by registering on the Google Gemini platform.
+Before running, `Quine-devmeme`, you will need an **Gemini API** key. You can obtain an API key by registering on the Google Gemini platform.
 
 ### Setup
-
-#### FrontEnd
 
 1. Clone the repository:
 
